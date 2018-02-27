@@ -3,14 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd-mobile": "^2.1.6",
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.6.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  },
+  "proxy": {
+    "/marketing": {
+      "target": "https://resource.smartisan.com",
+      "changeOrigin": true
+    },
+    "/product": {
+      "target": "https://www.smartisan.com",
+      "changeOrigin": true
+    }
   }
 }

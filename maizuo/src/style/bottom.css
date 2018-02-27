@@ -1,0 +1,20 @@
+.bottom_nav{
+	display: flex;
+	height: 0.76rem;
+	background: #fff;
+	box-shadow: 0 -0.2rem #333;
+}
+.bottom_nav li{
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 0.2rem;
+	font-size: 12px;
+}
+.bottom_nav i{
+	font-size: 25px !important;
+}
+.active{
+	color: red;
+}

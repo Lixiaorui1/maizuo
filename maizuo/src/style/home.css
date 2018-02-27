@@ -1,0 +1,124 @@
+#home{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+img{width: 100%}
+.top{
+	height: 0.5rem;
+	background: #1d1d1d;
+	text-align: center;
+	position: relative;
+}
+.left{
+	width: 0.6rem;
+	color: #ccc;
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 20px !important; 
+	position: absolute;
+	font-weight: 900;
+}
+span{
+	width: 0.5rem;
+	height: 100%;
+	background: url("../img/logo.png") no-repeat 0 0 ;
+	background-size: cover;
+	display: inline-block;
+}
+.content{
+	flex:1;
+	background: #f5f5f5;
+	overflow-y: scroll;
+}
+section{
+	box-sizing: border-box;
+	padding: 0.2rem;
+	text-align: center;
+	background: #fff;
+}
+.banner_section{
+	display: inline-block;
+	border-radius: 0.1rem;
+	/*height: 1.45rem;*/
+	width: 100%;
+	padding: 0
+}
+.list_section{
+	height: 0.5rem;
+	display: flex;
+	margin-top: 0.1rem;
+}
+.list_section li{
+	flex:1;
+}
+.list_section li img{
+	width: 0.25rem;
+}
+.list_section li p{
+	font-size: 12px;
+	color: #666;
+	margin-top: 0.1rem;
+}
+.hot{
+	background: #fff;
+	margin-top: 0.1rem;
+	padding-bottom: 0.2rem;
+	box-sizing: border-box;
+}
+.hot h2{
+	font-size: 16px;
+	color: #666;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-weight: 900;
+	padding: 0 0.2rem;
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 0.2rem;
+}
+.hot h2 i{
+	float: right;
+}
+.hot_goods{
+	display: flex;
+	overflow-x: scroll;
+}
+.hot_goods ul{
+	float: left;
+	margin-left: 0.08rem;
+}
+.hot_goods ul li:nth-of-type(1){
+	width: 1.26rem;
+	border: 1px solid #eee;
+}
+.hot_goods ul li:nth-of-type(2) p{
+	width: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 12px;
+	padding-left: 0.05rem;
+	line-height: 1.5em;
+}
+.hot_goods ul li:nth-of-type(2) p:nth-of-type(1){
+	font-weight: 900;
+	color: #333;
+	font-size: 14px;
+}
+.hot_goods ul li:nth-of-type(2) p:nth-of-type(2){
+	color: #7f7f7f;
+}
+.hot_goods ul li:nth-of-type(2) p:nth-of-type(3){
+	color: #d44d44;
+}
+.active{
+	margin-top: 0.1rem;
+	display: flex;
+	overflow-x: scroll;
+	background: #fff;
+}
+.active img{
+	width: 2.35rem;
+	height: 0.9rem;
+	padding: 0.2rem 0 0.2rem 0.1rem ;
+}
