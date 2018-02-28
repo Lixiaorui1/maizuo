@@ -1,0 +1,10 @@
+#class{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.top i{
+	color: #fff;
+	line-height: 0.5rem;
+	font-size: 20px;
+}

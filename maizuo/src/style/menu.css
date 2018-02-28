@@ -1,0 +1,30 @@
+#menu{
+	height: 5.41rem;
+	background: #000;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+/*进入动画起点*/
+.xyz-enter {
+  top: -10rem;
+}
+/*进入动画终点*/
+.xyz-enter.xyz-enter-active {
+  top: 0.5rem;
+  transition: all 500ms ease-in;
+}
+
+
+/*离开动画起点*/
+.xyz-leave {
+  /*transform: rotate(0deg);*/
+  top: 0.5rem;
+}
+/*离开动画终点*/
+.xyz-leave.xyz-leave-active {
+  opacity: 0;
+  /*transform: rotate(360deg);*/
+  top: -10rem;
+  transition: all 500ms ease-in;
+}

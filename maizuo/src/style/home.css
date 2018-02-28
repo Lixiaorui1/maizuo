@@ -19,7 +19,7 @@ img{width: 100%}
 	position: absolute;
 	font-weight: 900;
 }
-span{
+.top span{
 	width: 0.5rem;
 	height: 100%;
 	background: url("../img/logo.png") no-repeat 0 0 ;
@@ -30,6 +30,7 @@ span{
 	flex:1;
 	background: #f5f5f5;
 	overflow-y: scroll;
+	position: relative;
 }
 section{
 	box-sizing: border-box;
@@ -111,14 +112,45 @@ section{
 .hot_goods ul li:nth-of-type(2) p:nth-of-type(3){
 	color: #d44d44;
 }
-.active{
+.activity{
 	margin-top: 0.1rem;
 	display: flex;
 	overflow-x: scroll;
 	background: #fff;
 }
-.active img{
+.activity img{
 	width: 2.35rem;
 	height: 0.9rem;
 	padding: 0.2rem 0 0.2rem 0.1rem ;
+}
+.hot_goods_banner{
+	box-sizing: border-box;
+	padding: 0 0.2rem 0.1rem;
+	background: #fff;
+	width: 100%;
+	text-align: center;
+}
+.hot_goods_banner img{
+	width: 100%;
+}
+.hot_goods_banner p{
+	line-height: 1.5em;
+}
+.hot_goods_banner p:nth-of-type(2){
+	color: #666;
+	font-size: 12px;
+}
+.hot_goods_banner p:nth-of-type(3){
+	color: red;
+	font-size: 12px;
+	margin-bottom: 0.3rem;
+}
+.activity2{
+	background: #fff;
+	margin: 0.1rem 0;
+	padding-bottom: 0.1rem;
+}
+.activity2 img{
+	box-sizing: border-box;
+	padding: 0.1rem 0.1rem 0;
 }
