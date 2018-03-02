@@ -22,13 +22,14 @@ class Home extends Component {
   		hot_goods_banner: []
   	}
   	this.changeFlag = this.changeFlag.bind(this);
+  	this.goto = this.goto.bind(this);
   }
     changeFlag() {
 	    this.setState({
 	        menu_flag: !this.state.menu_flag
 	    })
 	}
-  componentDidMount() {
+   componentDidMount() {
 		axios.get("/marketing/mobile/index_e1b6c72ba511309a973b24e399f1b79f.json")
 		.then((res)=>{
 			console.log(res);
@@ -64,14 +65,17 @@ class Home extends Component {
 		  	that.setState({
 		  		hot_goods_banner: hot_goods_banner
 		  	})
-	  	},500)
+	  	},1000)
 	}	
-  render() {
+	goto(id){
+		this.props.history.push("/detail/" + id);
+	}
+    render() {
   	var menu = <Menu></Menu>;
   	if(!this.state.menu_flag){
   		menu = null;
   	}
-
+  	var that = this;
   	
     return (
       <div id="home">
@@ -123,7 +127,7 @@ class Home extends Component {
 		      			this.state.hot_goods.map(function(item,index){
 		      				return (
 		      						<ul key={item.id}>
-		      							<li><img src={item.shop_info.ali_image} alt=""/></li>
+		      							<li><img src={item.shop_info.ali_image} alt="" onClick={()=>that.goto(item.id)}/></li>
 		      							<li>
 		      								<p>{item.name}</p>
 		      								<p>{item.shop_info.sku_mobile_sub_title}</p>
