@@ -4,6 +4,11 @@
 	height: 100%;
 }
 .top i{
+	width: 1.5rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
 	color: #fff;
 	line-height: 0.5rem;
 	font-size: 20px;

@@ -127,7 +127,7 @@ class Home extends Component {
 		      			this.state.hot_goods.map(function(item,index){
 		      				return (
 		      						<ul key={item.id}>
-		      							<li><img src={item.shop_info.ali_image} alt="" onClick={()=>that.goto(item.id)}/></li>
+		      							<li><img src={item.shop_info.ali_image} alt="" onClick={()=>that.goto(item.spu_id)}/></li>
 		      							<li>
 		      								<p>{item.name}</p>
 		      								<p>{item.shop_info.sku_mobile_sub_title}</p>
